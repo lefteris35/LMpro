@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMpro | Web Development & Maintenance</title>
+    <style>
+        :root {
+            --primary: #0056b3;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+        }
+        .lang-switch {
+            background: var(--primary);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0056b3 0%, #002d62 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; }
+        .hero p { font-size: 20px; max-width: 600px; margin: 0 auto 30px; }
+        .btn {
+            background: #ffc107;
+            color: var(--dark);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .services {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .service-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 5px solid var(--primary);
+        }
+        .contact {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        footer {
+            background: #111;
+            color: #777;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">LMpro</a>
+            <nav>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="index.html" class="lang-switch">EL</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Modern Web Development & Maintenance</h1>
+        <p>We build fast, secure, and high-performing websites that make your business stand out.</p>
+        <a href="#contact" class="btn">Get Started Today</a>
+    </section>
+
+    <section id="services" class="services">
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>UI/UX design and development of custom, fully responsive websites for all devices.</p>
+        </div>
+        <div class="service-card">
+            <h3>Maintenance & Support</h3>
+            <p>Daily backups, security updates, speed optimization, and full technical support.</p>
+        </div>
+        <div class="service-card">
+            <h3>E-commerce & E-shops</h3>
+            <p>Creation of functional online stores with secure checkout and easy management.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Work Together</h2>
+        <p>Email us at info@webdevpro.com to discuss your upcoming project.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 WebDev Pro. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
